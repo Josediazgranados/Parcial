@@ -1,0 +1,4 @@
+cbrt(64)
+cbrt(512)
+cbrt(216)
+cbrt(2.7)
