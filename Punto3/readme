@@ -1,0 +1,23 @@
+## Descripción
+
+Este proyecto implementa una calculadora que evalúa la raíz cúbica de números reales usando Flex (análisis léxico) y Bison (análisis sintáctico).
+
+
+## Archivos del proyecto
+
+ejer1.l - Definición de tokens con Flex.
+
+ejer1.y - Gramática con Bison que evalúa expresiones cbrt( ).
+
+prueba.txt - Archivo de entrada con las expresiones a evaluar.
+
+## codigos de uso
+
+bison -d ejer1.y
+flex ejer1.l
+gcc ejer1.tab.c lex.yy.c -o ejer1 -lm
+
+para ver la pueba usar
+
+./ejer1 prueba.txt
+ todo en la terminal
