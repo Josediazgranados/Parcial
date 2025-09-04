@@ -1,0 +1,15 @@
+Calculadora con ANTLR4 JAVA
+Este proyecto es una calculadora escrita en Java usando ANTLR4.
+Lee expresiones matemáticas desde un archivo de texto (Calcpru.txt) y muestra el resultado en consola.
+
+Archivos principales
+Calcpru.g4 → Gramática de la calculadora
+MainCalcpru.java → Programa principal
+EvalVisitor.java → Lógica para evaluar expresiones
+Calcpru.txt → Archivo con las expresiones a resolver
+Como usarlo
+Coloca las expresiones que quieras resolver en Calcpru.txt (una por línea).
+Compila y ejecuta el proyecto con los siguientes comandos:
+java -jar antlr-4.13.2-complete.jar -visitor -no-listener Calcpru.g4
+javac -cp .:antlr-4.13.2-complete.jar *.java
+java -cp .:antlr-4.13.2-complete.jar MainCalcpru
